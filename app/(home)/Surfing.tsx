@@ -19,11 +19,11 @@ const Surfing = ({surfingPosts}: Props) => {
         <div className='sm:grid grid-cols-2 grid-rows-3 gap-x-8 gap-y-8 my-5'>
 
         {/* large */}
-        <Card className='bg-gray-500 rounded-md col-span-1 row-span-3' imageHeight='h-96' isLongForm  post={surfingPosts[0]}/>
+        <Card className='rounded-md col-span-1 row-span-3' imageHeight='h-96' isLongForm  post={surfingPosts[3]}/>
         {/* small */}
-        <Card className='bg-gray-500 rounded-md col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3' imageHeight='h-48' isSmallCard post={surfingPosts[1]}/>
-        <Card className='bg-gray-500 rounded-md col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3' imageHeight='h-48' isSmallCard post={surfingPosts[2]}/>
-        <Card className='bg-gray-500 rounded-md col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3' imageHeight='h-48' isSmallCard post={surfingPosts[3]}/>
+        <Card className='rounded-md col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3' imageHeight='h-48' isSmallCard post={surfingPosts[4]}/>
+        <Card className='rounded-md col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3' imageHeight='h-48' isSmallCard post={surfingPosts[5]}/>
+        <Card className='rounded-md col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3' imageHeight='h-48' isSmallCard post={surfingPosts[6]}/>
         
         </div>
     </section>

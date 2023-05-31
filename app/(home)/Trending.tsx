@@ -21,7 +21,7 @@ const TrendingCard = ({ className, post }: TrendingCardProps) => {
                 (max-width: 1060px) 50vw,
                 33vw"
                 src={post?.image}
-                style={{objectFit: 'cover'}}
+                style={{objectFit: 'cover', borderRadius: '5px'}}
                 />
             </div>
             <div className='absolute z-2 bottom-0 left-0 p-3'>
@@ -48,17 +48,18 @@ const Trending = ({trendingPosts}: Props) => {
         TRENDING
     </div>
     <p className='text-sm'>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat vitae quas laborum voluptas iste eaque odio molestias repudiandae nihil eos omnis aperiam, fuga facere sint doloremque quaerat placeat quod magnam?
+    Discover the latest and most popular surfing and travel blogs!
     </p>
  </div>
 
  <div className="sm:grid gap-5 grid-cols-4 grid-rows-2 sm:h-[600px] my-3">
-    <TrendingCard className="rounded-md col-span-2 row-span-2 bg-gray-500" post={trendingPosts[0]}/>
-    <TrendingCard className="rounded-md col-span-2 row-span-1 bg-gray-500" post={trendingPosts[1]}/>
-    <TrendingCard className="rounded-md col-span-1 row-span-1 bg-gray-500" post={trendingPosts[2]}/>
-    <TrendingCard className="rounded-md col-span-1 row-span-1 bg-gray-500" post={trendingPosts[3]}/>
+    <TrendingCard className=" rounded-md col-span-2 row-span-2" post={trendingPosts[0]}/>
+    <TrendingCard className=" rounded-md col-span-2 row-span-1" post={trendingPosts[1]}/>
+    <TrendingCard className=" rounded-md col-span-1 row-span-1" post={trendingPosts[2]}/>
+    <TrendingCard className=" rounded-md col-span-1 row-span-1" post={trendingPosts[3]}/>
  </div>
- <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem optio voluptatibus dolorem maiores tempora incidunt culpa accusamus a similique exercitationem. Fugiat assumenda aut maiores provident, reiciendis reprehenderit pariatur id. Ad.</p>
+ <h4 className='text-md font-bold'>Todays Quote -</h4>
+ <p className='text-sm'>"Surfing is a gateway to wanderlust, where the rhythmic dance with waves leads us to untamed horizons, connecting us with nature's vastness and cultures unknown, evoking a timeless spirit of exploration and awe." - ChatGpt.</p>
   </section>
   )
 }

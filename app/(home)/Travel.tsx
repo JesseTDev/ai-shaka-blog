@@ -16,12 +16,12 @@ const Travel = ({travelPosts}: Props) => {
     <p className='font-bold text-2xl'>Top Travel Blogs & Experiences</p>
         </div>
 
-        <Card post={travelPosts[0]} className='bg-gray-500 rounded-md sm:flex justify-between items-center gap-3 mt-7 mb-5' imageHeight='h-80' />
+        <Card post={travelPosts[1]} className='rounded-md sm:flex justify-between items-center gap-3 mt-7 mb-5' imageHeight='h-80' />
 
       <div className='sm:flex justify-between gap-8'>
-      <Card post={travelPosts[1]} className='basis-1/3 bg-gray-500 rounded-md mt-5 sm:mt-0' imageHeight='h-80' />
-      <Card post={travelPosts[2]}  className='basis-1/3 bg-gray-500 rounded-md mt-5 sm:mt-0' imageHeight='h-80' />
-      <Card post={travelPosts[3]} className='basis-1/3 bg-gray-500 rounded-md mt-5 sm:mt-0' imageHeight='h-80' />
+      <Card post={travelPosts[2]} className='basis-1/3 rounded-md mt-5 sm:mt-0' imageHeight='h-80' />
+      <Card post={travelPosts[3]}  className='basis-1/3 rounded-md mt-5 sm:mt-0' imageHeight='h-80' />
+      <Card post={travelPosts[4]} className='basis-1/3 rounded-md mt-5 sm:mt-0' imageHeight='h-80' />
       </div>
     </section>
   )

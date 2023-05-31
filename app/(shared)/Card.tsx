@@ -1,6 +1,7 @@
 import { Post } from '@prisma/client';
 import Link from 'next/link';
 import React from 'react'
+import Image from 'next/image';
 
 type Props = {
     post: Post; 
@@ -21,7 +22,16 @@ function Card({post, className, imageHeight, isSmallCard = false, isLongForm = f
     <div className={className}>
         <Link className='basis-full hover:opacity-70' href={`${process.env.NET_PUBLIC_URL}/post/${post?.id}`}>
             <div className={`relative w-auto mb-3 ${imageHeight}`}>
-                image
+            <Image
+              fill
+              alt='trending'
+              sizes="(max-width: 480px) 100vw,
+                (max-width: 768px) 75vw,
+                (max-width: 1060px) 50vw,
+                33vw"
+              src={image}
+  style={{ objectFit: 'cover', borderRadius: '8px' }}
+/>
             </div>
         </Link>
         <div className='basis-full'>
@@ -36,7 +46,7 @@ function Card({post, className, imageHeight, isSmallCard = false, isLongForm = f
             <h6 className='text-white text-xs'>{formattedDate}</h6>
         </div>
         <p
-          className={`text-wh-500 ${
+          className={`text-gray-800 ${
             isLongForm ? "line-clamp-5" : "line-clamp-3"
           }`}
         >

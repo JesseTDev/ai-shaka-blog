@@ -15,6 +15,9 @@ const Subscribe = () => {
   const submitEmailHandler = () => {
       setSaveEmail(email); 
       setDisplayEmail(true); 
+    if (email.email.length === 0) {
+      setDisplayEmail(false)
+    } 
   };
 
   return (
@@ -35,7 +38,7 @@ const Subscribe = () => {
       />
       <button
         onClick={submitEmailHandler}
-        className="bg-cyan-600 rounded-md text-white font-semibold w-5/6 min-w-[100px] py-2 px-5 mt-3"
+        className="bg-cyan-600 rounded-md text-white font-semibold w-5/6 min-w-[100px] py-2 px-5 mt-3 hover:opacity-70"
       >
         SUBSCRIBE
       </button>

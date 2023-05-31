@@ -1,9 +1,13 @@
+import { Post } from '@prisma/client';
 import React from 'react'; 
 import Card from '../(shared)/Card';
 
-type Props = {}
+type Props = {
+  travelPosts: Array<Post>; 
+};
 
-const Travel = (props: Props) => {
+const Travel = ({travelPosts}: Props) => {
+
   return (
     <section className='mt-10 mb-16'>
      <hr className='border-1' /> 
@@ -12,12 +16,12 @@ const Travel = (props: Props) => {
     <p className='font-bold text-2xl'>Top Travel Blogs & Experiences</p>
         </div>
 
-        <Card className='bg-gray-500 rounded-md sm:flex justify-between items-center gap-3 mt-7 mb-5' imageHeight='h-80' />
+        <Card post={travelPosts[0]} className='bg-gray-500 rounded-md sm:flex justify-between items-center gap-3 mt-7 mb-5' imageHeight='h-80' />
 
       <div className='sm:flex justify-between gap-8'>
-      <Card className='basis-1/3 bg-gray-500 rounded-md mt-5 sm:mt-0' imageHeight='h-80' />
-      <Card className='basis-1/3 bg-gray-500 rounded-md mt-5 sm:mt-0' imageHeight='h-80' />
-      <Card className='basis-1/3 bg-gray-500 rounded-md mt-5 sm:mt-0' imageHeight='h-80' />
+      <Card post={travelPosts[1]} className='basis-1/3 bg-gray-500 rounded-md mt-5 sm:mt-0' imageHeight='h-80' />
+      <Card post={travelPosts[2]}  className='basis-1/3 bg-gray-500 rounded-md mt-5 sm:mt-0' imageHeight='h-80' />
+      <Card post={travelPosts[3]} className='basis-1/3 bg-gray-500 rounded-md mt-5 sm:mt-0' imageHeight='h-80' />
       </div>
     </section>
   )

@@ -21,8 +21,8 @@ const Footer = () => {
             {/* col 3 */}
         <div className='mt-16 basis-1/4 sm:mt-0'>
         <h4 className='font-bold'>Contact Us</h4>
-        <p className='my-5'>aiblog@agblogs.com</p>
-        <p>1300AIBLOG</p>
+        <p className='my-5'>info@shakablog.com</p>
+        <p>1300Shakablog</p>
         </div>
        </div>
     </footer>

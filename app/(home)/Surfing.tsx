@@ -1,9 +1,12 @@
+import { Post } from '@prisma/client';
 import React from 'react';
 import Card from '../(shared)/Card';
 
-type Props = {}
+type Props = {
+  surfingPosts: Array<Post>; 
+}
 
-const Surfing = (props: Props) => {
+const Surfing = ({surfingPosts}: Props) => {
   return (
     <section>
             <hr className='border-1' /> 
@@ -16,11 +19,11 @@ const Surfing = (props: Props) => {
         <div className='sm:grid grid-cols-2 grid-rows-3 gap-x-8 gap-y-8 my-5'>
 
         {/* large */}
-        <Card className='bg-gray-500 rounded-md col-span-1 row-span-3' imageHeight='h-96' isLongForm />
+        <Card className='bg-gray-500 rounded-md col-span-1 row-span-3' imageHeight='h-96' isLongForm  post={surfingPosts[0]}/>
         {/* small */}
-        <Card className='bg-gray-500 rounded-md col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3' imageHeight='h-48' isSmallCard/>
-        <Card className='bg-gray-500 rounded-md col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3' imageHeight='h-48' isSmallCard/>
-        <Card className='bg-gray-500 rounded-md col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3' imageHeight='h-48' isSmallCard/>
+        <Card className='bg-gray-500 rounded-md col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3' imageHeight='h-48' isSmallCard post={surfingPosts[1]}/>
+        <Card className='bg-gray-500 rounded-md col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3' imageHeight='h-48' isSmallCard post={surfingPosts[2]}/>
+        <Card className='bg-gray-500 rounded-md col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3' imageHeight='h-48' isSmallCard post={surfingPosts[3]}/>
         
         </div>
     </section>

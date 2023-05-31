@@ -23,7 +23,7 @@ const Navbar = (props: Props) => {
     </div>
     <div className='flex justify-between gap-8 mt-2 mb-4 mx-10'>
         <div className='basis-full relative w-auto h-32 rounded-md bg-gray-500'>
-            Imgage right here
+            Image right here
         </div>
     </div>
     <hr className='border-1 mx-10' /> 

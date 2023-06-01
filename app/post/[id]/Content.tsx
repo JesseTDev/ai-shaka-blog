@@ -8,8 +8,6 @@ import StarterKit from "@tiptap/starter-kit";
 import EditorMenuBar from "./EditorMenuBar";
 import CategoryAndEdit from "./CategoryAndEdit";
 import Article from "./Article";
-// import CategoryAndEdit from "./CategoryAndEdit";
-// import Article from "./Article";
 
 type Props = {
   post: FormattedPost;
@@ -161,7 +159,7 @@ const Content = ({ post }: Props) => {
           <div className="flex justify-end">
             <button
               type="submit"
-              className="bg-accent-red hover:bg-wh-500 text-wh-10 font-semibold py-2 px-5 mt-5"
+              className="rounded-md bg-green-700 hover:bg-green-500 text-white font-semibold py-2 px-5 mt-5"
             >
               SUBMIT
             </button>

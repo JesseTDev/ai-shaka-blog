@@ -50,7 +50,7 @@ const Article = ({
       {/* Ai gen */}
       {isEditable && (
         <div className="border-2 rounded-md bg-wh-50 p-3 mb-3">
-          <h4 className="m-0 p-0">Generate Content with AI</h4>
+          <h4 className="m-0 p-0">Generate Content with AI 🤖</h4>
           <p className="my-1 p-0 text-xs">What type of writer do you want?</p>
           <div className="flex gap-5 justify-between">
             <input
@@ -60,7 +60,7 @@ const Article = ({
               value={role}
             />
             <button type="button" onClick={postAiContent}>
-              <PaperAirplaneIcon className="h-8 w-8 text-gray-800 hover:text-gray-500" />
+             <PaperAirplaneIcon className="h-8 w-8 text-green-700 hover:text-green-500" />
             </button>
           </div>
         </div>

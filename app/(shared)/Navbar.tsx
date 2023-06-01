@@ -17,7 +17,7 @@ const Navbar = (props: Props) => {
             <Link href='/'>About</Link>
         </div>
         <div>
-            <p>ChatGPT</p>
+            <p>AI Powered Blog 🤖</p>
         </div>
     </nav>
     <div className='flex justify-center py-5'>

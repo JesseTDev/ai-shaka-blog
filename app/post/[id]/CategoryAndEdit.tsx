@@ -42,19 +42,19 @@ const CategoryAndEdit = ({
 
   return (
     <div className="flex justify-between items-center">
-      <h4 className="bg-accent-orange py-2 px-5 tex-wh-900 text-sm font-bold">
+      <h4 className="bg-cyan-800 rounded-md py-2 px-5 text-white text-sm font-bold">
         {post.category}
       </h4>
       <div className="mt-4">
         {isEditable ? (
           <div className="flex justify-between gap-3">
             <button onClick={handleCancelEdit}>
-              <XMarkIcon className="h-6 w-6 text-accent-red" />
+              <XMarkIcon className="h-6 w-6 text-gray-800" />
             </button>
           </div>
         ) : (
           <button onClick={handleEnableEdit}>
-            <PencilSquareIcon className="h-6 w-6 text-accent-red" />
+            <PencilSquareIcon className="h-6 w-6 text-gray-800" />
           </button>
         )}
       </div>

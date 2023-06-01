@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import Trending from 'app/(home)/Trending';
-import Surfing from 'app/(home)/Surfing';
+import Trending from '@/app/(home)/Trending';
+import Surfing from '@/app/(home)/Surfing';
 import Travel from './(home)/Travel';
-import Subscribe from 'app/(shared)/Subscribe';
+import Subscribe from '@/app/(shared)/Subscribe';
 import Sidebar from './(shared)/Sidebar';
 import { prisma } from './api/client';
 import { Post } from '@prisma/client';

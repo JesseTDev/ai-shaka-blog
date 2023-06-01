@@ -1,10 +1,12 @@
 import './globals.css';
 import { Open_Sans } from 'next/font/google';
 import Navbar from './(shared)/Navbar';
-import TopBar from './(shared)/TopBar';
 import Footer from './(shared)/Footer';
+import TopBar from './(shared)/TopBar';
 
-const openSans = Open_Sans({ subsets: ['latin'] })
+const openSans = Open_Sans({
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: 'Shaka Blog',
@@ -14,17 +16,17 @@ export const metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={openSans.className}>
+    <html className={openSans.className} lang="en">
       <body>
         <TopBar />
         <Navbar />
         {children}
-         <Footer /> 
-        </body>
-       
+        <Footer />
+      </body>
     </html>
-  )
+  );
 }
+

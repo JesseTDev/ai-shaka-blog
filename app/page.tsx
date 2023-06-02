@@ -6,7 +6,7 @@ import Subscribe from '@/app/(shared)/Subscribe';
 import Sidebar from './(shared)/Sidebar';
 import { prisma } from './api/client';
 import { Post } from '@prisma/client';
-import Chatbase from './Chatbase'; 
+import Chatbase from './(shared)/Chatbase'; 
 
 export const revalidate = 60; 
 const CHATBASE_URL = process.env.CHATBASE_URL; 

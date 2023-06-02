@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import SocialLinks from './SocialLinks';
+import { UserCircleIcon } from '@heroicons/react/24/outline';
 
 const TopBar = () => {
     return (
@@ -10,8 +11,9 @@ const TopBar = () => {
             <div className='flex justify-between items-center gap-10'>
                 <Link href='/'></Link>
             </div>
-            <div>
-                <p>Log in</p>
+            <div className='flex cursor-pointer hover:opacity-70'>
+                <p>Login</p>
+                <UserCircleIcon style={{width: '20px', marginLeft: '5px'}}/>
             </div>
         </nav>
         </header>

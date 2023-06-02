@@ -3,7 +3,11 @@
 import React, {useState} from 'react';
 import { ChatBubbleLeftEllipsisIcon, XCircleIcon } from '@heroicons/react/24/solid';
 
-const Iframe = ({ src }) => {
+type Props = {
+  src?: string; 
+}; 
+
+const Iframe = ({ src }: Props) => {
 
   const [openChat, setOpenChat] = useState(false); 
 

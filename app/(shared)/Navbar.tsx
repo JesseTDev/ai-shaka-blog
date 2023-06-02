@@ -16,7 +16,7 @@ const Navbar = () => {
             <Link href='/'>About</Link>
         </div>
         <div>
-            <p><EnvelopeIcon className="h-6 w-6 text-white" /></p>
+            <p><EnvelopeIcon className="h-6 w-6 text-white cursor-pointer hover:opacity-80 transition-all duration-100" /></p>
         </div>
     </nav>
     <div className='flex justify-center py-5'>

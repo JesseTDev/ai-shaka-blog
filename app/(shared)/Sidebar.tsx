@@ -10,7 +10,7 @@ type Props = {}
 const Sidebar = (props: Props) => {
   return (
     <section>
-    <h4 className='bg-cyan-800 rounded-md py-3 px-5 text-white text-xs font-bold text-center'>Subscribe to Shaka Blog 🌴</h4>
+    <h4 className='bg-cyan-800 rounded-md py-3 px-5 text-white text-xs font-bold text-center'>Subscribe to the Shaka Blog 🌴</h4>
     <div className='my-5 mx-5'>
      <SocialLinks />
     </div>
@@ -36,7 +36,7 @@ const Sidebar = (props: Props) => {
       <h4 className="py-3 px-5 text-wh-500 font-bold text-center">
         Shaka Blog 🤙
       </h4>
-      <p className="text-wh-500 text-center text-sm">
+      <p className="text-wh-500 text-center text-sm mb-5">
       We blog to educate you radical surfers and travelers on the exciting world of adventure, exploration, and culture. Our mission is to provide valuable insights, tips, and stories that inspire and empower you to embark on incredible journeys.
       </p>
     </section>

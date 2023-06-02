@@ -28,7 +28,7 @@ const Article = ({
     editor
       .chain()
       .focus()
-      .setContent("Generating Ai Content. Please Wait...")
+      .setContent("🤖 Generating Ai Content. Please Wait...")
       .run();
 
     const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/openai`, {
@@ -39,6 +39,7 @@ const Article = ({
         role: role,
       }),
     });
+    
     const data = await response.json();
 
     editor.chain().focus().setContent(data.content).run();
@@ -46,15 +47,15 @@ const Article = ({
   };
 
   return (
-    <article className="text-wh-500 leading-8">
+    <article className="text-gray-500 leading-8">
       {/* Ai gen */}
       {isEditable && (
-        <div className="border-2 rounded-md bg-wh-50 p-3 mb-3">
+        <div className="border-2 rounded-md bg-gray-100 p-3 mb-3">
           <h4 className="m-0 p-0">Generate Content with AI 🤖</h4>
           <p className="my-1 p-0 text-xs">What type of writer do you want?</p>
           <div className="flex gap-5 justify-between">
             <input
-              className="border-2 rounded-md bg-wh-50 px-3 py-1 w-full"
+              className="border-2 rounded-md bg-gray-100 px-3 py-1 w-full"
               placeholder="Role"
               onChange={(e) => setRole(e.target.value)}
               value={role}
@@ -68,7 +69,7 @@ const Article = ({
 
       <div
         className={
-          isEditable ? "border-2 rounded-md bg-wh-50 p-3" : "w-full max-w-full"
+          isEditable ? "border-2 rounded-md bg-gray-100 p-3" : "w-full max-w-full"
         }
       >
         {isEditable && (
@@ -79,7 +80,7 @@ const Article = ({
         )}
         <EditorContent editor={editor} />
       </div>
-      {contentError && <p className="mt-1 text-wh-900">{contentError}</p>}
+      {contentError && <p className="mt-1 text-gray-800">{contentError}</p>}
     </article>
   );
 };

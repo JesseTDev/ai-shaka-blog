@@ -1,23 +1,22 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
-import Banner from 'public/assets/banner.jpeg';  
+import Banner from 'public/assets/banner.jpeg';
+import { EnvelopeIcon } from '@heroicons/react/24/solid';  
 
 
-type Props = {}
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
     <header className='mb-5'>
     <nav className='flex justify-between items-center w-full bg-cyan-900 text-white px-10 py-4'>
-        <div className='hidden sm:block'>Shaka Blog 🤙</div>
+        <div className='hidden sm:block cursor-pointer'><a href='/'>Shaka Blog 🤙</a></div>
         <div className='flex justify-between items-center gap-10'>
             <Link href='/'>Home</Link>
             <Link href='/'>Trending</Link>
             <Link href='/'>About</Link>
         </div>
         <div>
-            <p>AI Powered Blog 🤖</p>
+            <p><EnvelopeIcon className="h-6 w-6 text-white" /></p>
         </div>
     </nav>
     <div className='flex justify-center py-5'>

@@ -59,7 +59,7 @@ const Content = ({ post }: Props) => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // validation checks
+    // Validation Checks
     if (title === "") setTitleError("This field is required.");
     if (editor?.isEmpty) setContentError("This field is required.");
     if (title === "" || editor?.isEmpty) return;
@@ -113,7 +113,7 @@ const Content = ({ post }: Props) => {
           {isEditable ? (
             <div>
               <textarea
-                className="border-2 rounded-md bg-wh-50 p-3 w-full"
+                className="border-2 rounded-md bg-gray-100 p-3 w-full"
                 placeholder="Title"
                 onChange={handleOnChangeTitle}
                 value={title}
@@ -127,7 +127,7 @@ const Content = ({ post }: Props) => {
           )}
           <div className="flex gap-3">
             <h5 className="font-semibold text-xs">By {post.author}</h5>
-            <h6 className="text-wh-300 text-xs">{formattedDate}</h6>
+            <h6 className="text-gray-700 text-xs">{formattedDate}</h6>
           </div>
         </>
 

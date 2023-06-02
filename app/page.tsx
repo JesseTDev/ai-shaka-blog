@@ -6,8 +6,10 @@ import Subscribe from '@/app/(shared)/Subscribe';
 import Sidebar from './(shared)/Sidebar';
 import { prisma } from './api/client';
 import { Post } from '@prisma/client';
+import Chatbase from './Chatbase'; 
 
 export const revalidate = 60; 
+const CHATBASE_URL = process.env.CHATBASE_URL; 
 
   const getPosts = async () => {
     const posts = await prisma.post.findMany(); 
@@ -52,6 +54,7 @@ const [trendingPosts, surfingPosts, travelPosts] = formatPosts();
         </div>
         <div className='basis-1/4'>
             <Sidebar /> 
+            <Chatbase src={CHATBASE_URL} />
         </div>
       </div>
     </main>

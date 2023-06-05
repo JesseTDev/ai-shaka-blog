@@ -1,4 +1,4 @@
-import { Configuration, CreateChatCompletionResponse, OpenAIApi } from 'openai';
+import { Configuration, OpenAIApi } from 'openai';
 import { NextResponse } from 'next/server';
 import { AxiosResponse } from 'axios'; 
 

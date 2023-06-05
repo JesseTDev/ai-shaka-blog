@@ -1,22 +1,56 @@
-import Link from 'next/link';
+'use client'
 import Image from 'next/image';
 import React from 'react';
 import Banner from 'public/assets/banner.jpeg';
 import { EnvelopeIcon } from '@heroicons/react/24/solid';  
-
+import TopBar from './TopBar';
+import { Link as ScrollLink } from 'react-scroll';
+import Link from 'next/link';
 
 const Navbar = () => {
+  const hoverClass = 'hover:opacity-70';
   return (
     <header className='mb-5'>
+      <TopBar />
     <nav className='flex justify-between items-center w-full bg-cyan-900 text-white px-10 py-4'>
-        <div className='hidden sm:block cursor-pointer'><a href='/'>Shaka Blog 🤙</a></div>
+        <div className='hidden sm:block cursor-pointer font-bold hover:opacity-70'><a href='/'>Shaka Blog 🤙</a></div>
         <div className='flex justify-between items-center gap-10'>
-            <Link href='/'>Home</Link>
-            <Link href='/'>Trending</Link>
-            <Link href='/'>About</Link>
+        <ScrollLink
+          className={hoverClass}
+          style={{cursor: 'pointer'}}
+          activeClass="active"
+          to="trending"
+          spy={true}
+          smooth={true}
+          duration={800}
+          >
+          Trending
+          </ScrollLink>
+          <ScrollLink
+          className={hoverClass}
+          style={{cursor: 'pointer'}}
+          activeClass="active"
+          to="surfing"
+          spy={true}
+          smooth={true}
+          duration={800}
+          >
+         Surfing
+          </ScrollLink>
+          <ScrollLink
+          className={hoverClass}
+          style={{cursor: 'pointer'}}
+          activeClass="active"
+          to="travel"
+          spy={true}
+          smooth={true}
+          duration={800}
+          >
+          Travel
+          </ScrollLink>
         </div>
         <div>
-            <p><EnvelopeIcon className="h-6 w-6 text-white cursor-pointer hover:opacity-80 transition-all duration-100" /></p>
+            <Link href={''}><EnvelopeIcon className="h-6 w-6 text-white cursor-pointer hover:opacity-80 transition-all duration-100" /></Link>
         </div>
     </nav>
     <div className='flex justify-center py-5'>
@@ -34,7 +68,6 @@ const Navbar = () => {
   src={Banner}
   style={{ objectFit: 'cover', filter: 'brightness(60%)', borderRadius: '8px' }}
 />
-
     <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
       <h1 className='text-white font-bold text-6xl text-center'>WELCOME TO THE SHAKA BLOG!</h1>
     </div>

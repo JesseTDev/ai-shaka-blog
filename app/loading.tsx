@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react'; 
 
-type Props = {}
 
-const Loading = (props: Props) => {
+const Loading = () => {
   return (
-    <div>Loading</div>
-  )
+<div className="flex justify-center items-center">
+  <div
+    className="border-4 border-gray-200 border-t-[2px] rounded-full w-12 h-12 animate-spin"
+    style={{ borderTopColor: "#3498db" }}
+  ></div>
+  <p className="px-5 font-bold">Loading...</p>
+</div>
+  ); 
 }; 
 
 export default Loading; 

@@ -4,13 +4,15 @@ import Subscribe from './Subscribe';
 import Image from 'next/image';
 import Ad1 from 'public/assets/ad1.jpeg';
 import About from 'public/assets/about.jpeg';
+import { ArrowDownIcon } from '@heroicons/react/24/solid';
 
-type Props = {}
-
-const Sidebar = (props: Props) => {
+const Sidebar = () => {
   return (
     <section>
-    <h4 className='bg-cyan-800 rounded-md py-3 px-5 text-white text-xs font-bold text-center'>Subscribe to the Shaka Blog 🌴</h4>
+    <h4 className='text-lg font-bold text-center bg-gray-700 rounded-md text-white'>Subscribe to the Shaka Blog 🌴</h4>
+    <div className='flex justify-center'>
+    <p className='pt-2'><ArrowDownIcon style={{height:'30px'}}/></p>
+    </div>
     <div className='my-5 mx-5'>
      <SocialLinks />
     </div>

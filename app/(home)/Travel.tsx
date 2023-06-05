@@ -9,7 +9,7 @@ type Props = {
 const Travel = ({travelPosts}: Props) => {
 
   return (
-    <section className='mt-10 mb-16'>
+    <section id='travel' className='mt-10 mb-16'>
      <hr className='border-1' /> 
      <div className='flex items-center gap-3 my-8'>
     <h4 className='bg-cyan-900 rounded-md py-2 px-5 text-white text-sm font-bold'>TRAVEL</h4>

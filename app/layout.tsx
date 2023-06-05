@@ -4,6 +4,7 @@ import Navbar from './(shared)/Navbar';
 import Footer from './(shared)/Footer';
 import TopBar from './(shared)/TopBar';
 
+
 const openSans = Open_Sans({
   subsets: ["latin"],
 });
@@ -13,6 +14,7 @@ export const metadata = {
   description: 'Blog built with Next JS',
 }; 
 
+
 export default function RootLayout({
   children,
 }: {
@@ -21,7 +23,6 @@ export default function RootLayout({
   return (
     <html className={openSans.className} lang="en">
       <body>
-        <TopBar />
         <Navbar />
         {children}
         <Footer />

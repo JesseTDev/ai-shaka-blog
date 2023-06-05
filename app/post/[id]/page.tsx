@@ -9,6 +9,7 @@ type Props = {
   params: { id: string };
 };
 
+
 export const revalidate = 60;
 
 const getPost = async (id: string) => {
@@ -51,5 +52,7 @@ const Post = async ({ params }: Props) => {
     </main>
   );
 };
+
+
 
 export default Post;

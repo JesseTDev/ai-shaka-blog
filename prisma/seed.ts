@@ -5,14 +5,14 @@ const prisma: any = new PrismaClient();
 const posts = [
     {
         category: "Surfing",
-        title: "The Joy of Riding Waves",
+        title: "Surfing Paradise: Western Australia's Coastal Gems",
         content:
-        "<h1>The Joy of Riding Waves</h1><p>Surfing is not just a sport; it's a way of life. There is something magical about catching a wave, feeling the power of the ocean beneath you, and gliding across the water with the wind in your hair. It's a moment of pure bliss and connection with nature.</p><h2>Exploring New Waves</h2><p>One of the most exciting aspects of surfing is the opportunity to explore new waves around the world. From the famous breaks of Hawaii to the hidden gems in Indonesia, surfers are constantly seeking out new adventures and challenges.</p><h3>Pushing Limits</h3><p>Surfers are always pushing their limits and striving to improve their skills. Whether it's mastering a new trick or conquering a bigger wave, the pursuit of progression is what drives them.</p><h2>Finding Inner Peace</h2><p>Surfing is not just about adrenaline and excitement; it's also a form of meditation. The rhythm of the waves and the focus required to ride them can help surfers find inner peace and a sense of calm.</p><h3>Connecting with the Ocean</h3><p>Surfers have a deep connection with the ocean and a profound respect for its power. They understand the importance of preserving our oceans and taking care of the environment.</p>",
-        author: "Emma Waters",
-        image: "/assets/blog-1.png",
+        "<h1>Surfing Paradise: Western Australia's Coastal Gems</h1><p>Western Australia is a surfing paradise with world-class waves along its stunning coastline. From Margaret River to the Kimberley region, this pristine coastline attracts surfers worldwide.</p><h2>Diverse Waves</h2><p>Western Australia offers powerful reef breaks and sandy point breaks, catering to surfers of all levels. From challenging spots like The Box to beginner-friendly breaks like Yallingup, there's something for everyone.</p><h3>Natural Beauty</h3><p>Beyond the waves, Western Australia's coastline is blessed with breathtaking beauty. Rugged cliffs, white sandy beaches, and turquoise waters create a stunning backdrop for surfers to enjoy.</p><h2>Surfing Culture</h2><p>Western Australia has a thriving surfing culture and a welcoming community. Surf shops, schools, and clubs provide opportunities to connect, learn, and share stories with fellow surfers.</p><h3>Exploration and Adventure</h3><p>Traveling to Western Australia for surfing means exploring new breaks, pristine beaches, and unique landscapes. It's a chance to embrace adventure and immerse oneself in the region's beauty and wildlife.</p>",
+        author: "Sarah Johnson",
+        image: "/assets/blog-4.png",
         snippet:
-        "The Joy of Riding Waves Surfing is not just a sport; it's a way of life. There is something magical about catching a wave, feeling the power of the ocean beneath you, and gliding across the water with the wind in your hair. It's a moment of pure bliss and connection with nature...",
-        },
+        "Surfing Paradise: Western Australia's Coastal Gems Western Australia is a surfing paradise with world-class waves along its stunning coastline. From Margaret River to the Kimberley region, this pristine coastline attracts surfers worldwide..."
+    },
         {   
         category: "Travel",
         title: "Exploring the Wonders of the World",
@@ -35,14 +35,14 @@ const posts = [
         },
         {
             category: "Surfing",
-            title: "Surfing Paradise: Western Australia's Coastal Gems",
+            title: "The Joy of Riding Waves",
             content:
-            "<h1>Surfing Paradise: Western Australia's Coastal Gems</h1><p>Western Australia is a surfing paradise with world-class waves along its stunning coastline. From Margaret River to the Kimberley region, this pristine coastline attracts surfers worldwide.</p><h2>Diverse Waves</h2><p>Western Australia offers powerful reef breaks and sandy point breaks, catering to surfers of all levels. From challenging spots like The Box to beginner-friendly breaks like Yallingup, there's something for everyone.</p><h3>Natural Beauty</h3><p>Beyond the waves, Western Australia's coastline is blessed with breathtaking beauty. Rugged cliffs, white sandy beaches, and turquoise waters create a stunning backdrop for surfers to enjoy.</p><h2>Surfing Culture</h2><p>Western Australia has a thriving surfing culture and a welcoming community. Surf shops, schools, and clubs provide opportunities to connect, learn, and share stories with fellow surfers.</p><h3>Exploration and Adventure</h3><p>Traveling to Western Australia for surfing means exploring new breaks, pristine beaches, and unique landscapes. It's a chance to embrace adventure and immerse oneself in the region's beauty and wildlife.</p>",
-            author: "Sarah Johnson",
-            image: "/assets/blog-4.png",
+            "<h1>The Joy of Riding Waves</h1><p>Surfing is not just a sport; it's a way of life. There is something magical about catching a wave, feeling the power of the ocean beneath you, and gliding across the water with the wind in your hair. It's a moment of pure bliss and connection with nature.</p><h2>Exploring New Waves</h2><p>One of the most exciting aspects of surfing is the opportunity to explore new waves around the world. From the famous breaks of Hawaii to the hidden gems in Indonesia, surfers are constantly seeking out new adventures and challenges.</p><h3>Pushing Limits</h3><p>Surfers are always pushing their limits and striving to improve their skills. Whether it's mastering a new trick or conquering a bigger wave, the pursuit of progression is what drives them.</p><h2>Finding Inner Peace</h2><p>Surfing is not just about adrenaline and excitement; it's also a form of meditation. The rhythm of the waves and the focus required to ride them can help surfers find inner peace and a sense of calm.</p><h3>Connecting with the Ocean</h3><p>Surfers have a deep connection with the ocean and a profound respect for its power. They understand the importance of preserving our oceans and taking care of the environment.</p>",
+            author: "Emma Waters",
+            image: "/assets/blogger.png",
             snippet:
-            "Surfing Paradise: Western Australia's Coastal Gems Western Australia is a surfing paradise with world-class waves along its stunning coastline. From Margaret River to the Kimberley region, this pristine coastline attracts surfers worldwide..."
-        },
+            "The Joy of Riding Waves Surfing is not just a sport; it's a way of life. There is something magical about catching a wave, feeling the power of the ocean beneath you, and gliding across the water with the wind in your hair. It's a moment of pure bliss and connection with nature...",
+            },
         {
     category: "Surfing",
     title: "Surfing Bliss: Riding The Pass in Byron Bay",
@@ -142,3 +142,5 @@ main()
     await prisma.$disconnect();
     process.exit(1);
   });
+
+  

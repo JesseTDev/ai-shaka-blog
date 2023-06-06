@@ -9,7 +9,7 @@ import { ArrowDownIcon } from '@heroicons/react/24/solid';
 const Sidebar = () => {
   return (
     <section>
-    <h4 className='text-lg font-bold text-center bg-gray-700 rounded-md text-white'>Subscribe to the Shaka Blog 🌴</h4>
+    <h4 className='text-lg font-bold text-center bg-gray-600 rounded-md text-white pt-2 pb-2'>Subscribe to the Shaka Blog 🌴</h4>
     <div className='flex justify-center'>
     <p className='pt-2'><ArrowDownIcon style={{height:'30px'}}/></p>
     </div>

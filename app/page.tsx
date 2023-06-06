@@ -8,6 +8,7 @@ import { prisma } from './api/client';
 import { Post } from '@prisma/client';
 import Chatbase from './(shared)/Chatbase'; 
 
+
 export const revalidate = 60; 
 const CHATBASE_URL = process.env.CHATBASE_URL; 
 
@@ -16,6 +17,7 @@ const CHATBASE_URL = process.env.CHATBASE_URL;
 
     return posts; 
   };
+
 
 const Home = async () => {
 
@@ -40,6 +42,7 @@ const Home = async () => {
   }; 
 
 const [trendingPosts, surfingPosts, travelPosts] = formatPosts();
+
 
   return (
     <main className='px-10 leading-7'>

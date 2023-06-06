@@ -50,7 +50,7 @@ const Navbar = () => {
           </ScrollLink>
         </div>
         <div>
-            <Link href={''}><EnvelopeIcon className="h-6 w-6 text-white cursor-pointer hover:opacity-80 transition-all duration-100" /></Link>
+            <a href="mailto:jessetaylordev5@gmail.com" target='_blank'><EnvelopeIcon className="h-6 w-6 text-white cursor-pointer hover:opacity-80 transition-all duration-100" /></a>
         </div>
     </nav>
     <div className='flex justify-center py-5'>

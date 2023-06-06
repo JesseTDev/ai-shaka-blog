@@ -1,8 +1,5 @@
 import { Editor } from "@tiptap/react";
 import React from "react";
-import ListItem from "@tiptap/extension-list-item";
-import { EditorContent, useEditor } from "@tiptap/react";
-import StarterKit from "@tiptap/starter-kit";
 
 type Props = {
   editor: Editor | null;

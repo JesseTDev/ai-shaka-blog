@@ -47,7 +47,7 @@ const Trending = ({ trendingPosts }: Props) => {
                 <div className='bg-cyan-900 rounded-md py-2 px-8 text-white text-sm font-bold'>
                     TRENDING
                 </div>
-                <p className='text-sm font-bold'>
+                <p className='font-bold text-xl'>
                     Discover the latest and most popular surfing and travel blogs!
                 </p>
             </div>

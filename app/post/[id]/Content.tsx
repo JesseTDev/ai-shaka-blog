@@ -90,7 +90,8 @@ const Content = ({ post }: Props) => {
   return (
     <div className="prose w-full max-w-full mb-10">
       {/* breadcrumbs */}
-      <h5 className="text-wh-300">{`Home > ${post.category} > ${post.title}`}</h5>
+      <div className="text-wh-300 text-gray-500">{`Home > ${post.category} > ${post.title}`}</div>
+      <a href="/">Back Home</a>
 
       {/* category & edit */}
       <CategoryAndEdit

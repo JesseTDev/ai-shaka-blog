@@ -20,7 +20,7 @@ function Card({post, className, imageHeight, isSmallCard = false, isLongForm = f
 
   return (
     <div className={className}>
-        <Link className='basis-full hover:opacity-70' href={`${process.env.NEXT_PUBLIC_URL}/post/${post?.id}`}>
+        <Link className='basis-full hover:opacity-70' href={`${process.env.NEXT_PUBLIC_URL}/post/${id}`}>
             <div className={`relative w-auto mb-3 ${imageHeight}`}>
             <Image
               fill
@@ -35,7 +35,7 @@ function Card({post, className, imageHeight, isSmallCard = false, isLongForm = f
             </div>
         </Link>
         <div className='basis-full'>
-        <Link href={`${process.env.NEXT_PUBLIC_URL}/post/${post?.id}`}>
+        <Link href={`$${process.env.NEXT_PUBLIC_URL}/post/${id}`}>
            <h4 className={`font-bold hover:text-gray-600
            ${isSmallCard ? "text-base" : "text-lg"}
            ${isSmallCard ? "line-clamp-2" : ""}

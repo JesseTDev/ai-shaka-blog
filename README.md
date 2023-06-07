@@ -1,3 +1,5 @@
+## Surfing & Traveling Blog - A Next.js 13 Project (AI Integration)
+
 # Project Overview
 
 This project is a mobile-first responsive blog focused on surfing and traveling. It's developed using Next.js 13 and styled with Tailwind CSS. The blog leverages OpenAI's API to deliver unique, AI-generated content to the users based on their preferences.

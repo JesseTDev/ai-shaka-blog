@@ -35,7 +35,7 @@ function Card({post, className, imageHeight, isSmallCard = false, isLongForm = f
             </div>
         </Link>
         <div className='basis-full'>
-        <Link href={`${process.env.NET_PUBLIC_URL}/post/${post?.id}`}>
+        <Link href={`${process.env.NEXT_PUBLIC_URL}/post/${post?.id}`}>
            <h4 className={`font-bold hover:text-gray-600
            ${isSmallCard ? "text-base" : "text-lg"}
            ${isSmallCard ? "line-clamp-2" : ""}

@@ -21,7 +21,7 @@ const Subscribe = () => {
   };
 
   return (
-<div className="text-center bg-yellow-100 px-5 py-10 rounded-md">
+<div id='subscribe' className="text-center bg-yellow-100 px-5 py-10 rounded-md">
   {displayEmail ? (
     <h4>{`Thanks for subscribing to the Shaka Blog! Your newsletter will be sent to 
     ${saveEmail.email}`}</h4>

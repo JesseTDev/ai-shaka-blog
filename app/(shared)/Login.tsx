@@ -9,9 +9,9 @@ const Login = async () => {
     const session = await getServerSession(authConfig); 
   return (
     <div>
-    {session ? <p>Welcome {session.user?.name}</p> : <Link href='api/auth/signin'>Sign In</Link>}
+    {session ? <Link href='api/auth/signout'>Sign out</Link> : <Link className='cursor:pointer hover:text-gray-600' href='api/auth/signin'>Login</Link>}
     </div>
   )
-}
+}; 
 
 export default Login; 

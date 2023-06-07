@@ -3,15 +3,13 @@ import Image from 'next/image';
 import React from 'react';
 import Banner from 'public/assets/banner.jpeg';
 import { EnvelopeIcon } from '@heroicons/react/24/solid';  
-import TopBar from './TopBar';
+// import TopBar from './TopBar';
 import { Link as ScrollLink } from 'react-scroll';
-import Link from 'next/link';
 
 const Navbar = () => {
   const hoverClass = 'hover:opacity-70';
   return (
-    <header className='mb-5'>
-      <TopBar />
+    <div className='mb-5'>
     <nav className='flex justify-between items-center w-full bg-cyan-900 text-white px-10 py-4'>
         <div className='hidden sm:block cursor-pointer font-bold hover:opacity-70'><a href='/'>Shaka Blog 🤙</a></div>
         <div className='flex justify-between items-center gap-10'>
@@ -74,7 +72,7 @@ const Navbar = () => {
   </div>
 </div>
     <hr className='border-1 mx-10' /> 
-    </header>
+    </div>
   )
 }
 

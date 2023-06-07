@@ -8,7 +8,7 @@ const Footer = () => {
             {/* col 1 */}
         <div className='mt-16 basis-1/2 sm:mt-0'>
         <h4 className='font-bold'>Shaka Blog 🤙</h4>
-        <p className='my-5'>This blog is created by surfers, for surfers and travelers alike. We are passionate about sharing our love for surfing and travel, and this platform serves as a hub of inspiration and knowledge for all those who share our adventurous spirit</p>
+        <p className='my-5'>This blog is created by surfers with 'Open Ai' integration, for surfers and travelers alike. We are passionate about sharing our love for surfing and travel, and this platform serves as a hub of inspiration and knowledge for all those who share our adventurous spirit</p>
         <p>Developed by Jesse Taylor</p>
         <p>© Shaka Blog, All Rights Reserved.</p>
         </div>

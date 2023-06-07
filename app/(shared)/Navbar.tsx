@@ -52,7 +52,9 @@ const Navbar = () => {
         </div>
     </nav>
     <div className='flex justify-center py-5'>
-    <h2 className='font-bold text-xl text-center'>A Blog for Surfers and Travelers</h2>
+    <h2 className='font-bold text-xl text-center' style={{ fontFamily: 'monospace' }}>
+  A Blog for Surfers and Travelers
+</h2>
     </div>
     <div className='flex justify-between gap-8 mt-2 mb-4 mx-10'>
   <div className='basis-full relative w-auto h-80 rounded-md overflow-visible'>

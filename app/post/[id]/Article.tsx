@@ -52,7 +52,7 @@ const Article = ({
       {isEditable && (
         <div className="border-2 rounded-md bg-gray-100 p-3 mb-3">
           <h4 className="m-0 p-0">Generate Content with AI 🤖</h4>
-          <p className="my-1 p-0 text-xs">What type of writer do you want?</p>
+          <p className="my-1 p-0 text-xs font-semibold">Below, fill in what sort of ai assistant you want to edit the blog</p>
           <div className="flex gap-5 justify-between">
             <input
               className="border-2 rounded-md bg-gray-100 px-3 py-1 w-full"

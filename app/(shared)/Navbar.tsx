@@ -3,8 +3,8 @@ import Image from 'next/image';
 import React from 'react';
 import Banner from 'public/assets/banner.jpeg';
 import { EnvelopeIcon } from '@heroicons/react/24/solid';  
-// import TopBar from './TopBar';
 import { Link as ScrollLink } from 'react-scroll';
+
 
 const Navbar = () => {
   const hoverClass = 'hover:opacity-70';

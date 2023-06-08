@@ -13,6 +13,7 @@ Users can easily sign in using their Google or GitHub accounts, ensuring a quick
 ## Tech Stack
 
 - Next.js 13 (Next.js Routing, SSC & CSR)
+- Typescript
 - Tailwind CSS
 - Prisma
 - NextAuth.js

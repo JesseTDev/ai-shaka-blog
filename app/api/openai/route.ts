@@ -13,7 +13,7 @@ export async function POST(request: Request) {
     const { title, role } = await request.json();
 
 
-    const aiResponse: any = await openai.createChatCompletion({
+    const aiResponse: AxiosResponse | any = await openai.createChatCompletion({
       model: "gpt-3.5-turbo",
       messages: [
         {
@@ -37,6 +37,5 @@ export async function POST(request: Request) {
     NextResponse.json({ error: "error updating post" }, { status: 500 });
   }
 }; 
-
 
 

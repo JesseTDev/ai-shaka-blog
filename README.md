@@ -27,7 +27,7 @@ Users can easily sign in using their Google or GitHub accounts, ensuring a quick
 ## Features
 
 - Responsive, mobile-first design
-- AI generated blogs with customizable author styles
+- AI generated blogs with customisable author styles
 - Editable blog posts
 - Integrated AI chatbot
 - Google & GitHub sign-in
